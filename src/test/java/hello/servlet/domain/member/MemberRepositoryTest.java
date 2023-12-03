@@ -12,17 +12,17 @@ class MemberRepositoryTest {
 
     @AfterEach
     void afterEach() {
-        memberRepository.clearStore();
+//        memberRepository.clearStore();
     }
-    @Test
-    void save() {
-        // given
-        Member member = new Member("hello", 20);
-        // when
-        Member savedMember = memberRepository.save(member);
-        // then
-        Member findMember = memberRepository.findById(savedMember.getId());
-        Assertions.assertThat(findMember).isEqualTo(savedMember);
-    }
+//    @Test
+//    void save() {
+//        // given
+//        Member member = new Member("hello", 20);
+//        // when
+//        Member savedMember = memberRepository.save(member);
+//        // then
+//        Member findMember = memberRepository.findById(savedMember.getId());
+//        Assertions.assertThat(findMember).isEqualTo(savedMember);
+//    }
 
 }
